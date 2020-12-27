@@ -1,0 +1,10 @@
+---
+- name: Sending an e-mail using Gmail SMTP servers
+  hosts: vagrant3
+  become: yes
+  become_user: root
+  tasks:
+    - name: Apache Install
+      apt:
+        name: apache2
+        state: latest
